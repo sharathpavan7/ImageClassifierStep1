@@ -12,11 +12,6 @@
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageToLabel"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
         <Button
             android:id="@+id/btnTest"
             android:layout_width="wrap_content"
@@ -29,5 +24,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="start|top" />
+        <ImageView
+            android:id="@+id/imageToLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

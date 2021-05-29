@@ -15,7 +15,13 @@ import java.lang.Exception
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        if (intent.getIntExtra("layoutFlag", 0) == 0) {
+            setContentView(R.layout.activity_main)
+        } else if (intent.getIntExtra("layoutFlag", 0) == 1) {
+            setContentView(R.layout.activity_main2)
+        } else {
+            setContentView(R.layout.activity_main)
+        }
 
         val fileName = "flower1.jpg"
         val bitMap: Bitmap? = assetToBitmap(fileName)
